@@ -3,5 +3,13 @@
   "semi": true,
   "trailingComma": "all",
   "singleQuote": true,
-  "endOfLine": "lf"
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "printWidth": 10000
+      }
+    }
+  ]
 }
