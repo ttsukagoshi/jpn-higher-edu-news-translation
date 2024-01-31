@@ -8,5 +8,4 @@ node_modules/
 coverage/
 
 # clasp
-# You might want to uncomment the following line if you're developing a public Google Apps Script project:
-# .clasp.json
+.clasp.json
