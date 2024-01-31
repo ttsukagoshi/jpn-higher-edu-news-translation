@@ -7,9 +7,11 @@ module.exports = {
   clearMocks: true,
   collectCoverage: true,
   coverageDirectory: 'coverage',
+  coveragePathIgnorePatterns: ['/node_modules/', '/tests/'],
   coverageProvider: 'v8',
   globals: {
     PropertiesService: {},
+    Session: {},
     SpreadsheetApp: {},
     UrlFetchApp: {},
     Utilities: {},
@@ -18,7 +20,7 @@ module.exports = {
   moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
   preset: 'ts-jest',
   testEnvironment: 'node',
-  testMatch: ['**/tests/**/*.[jt]s?(x)'],
+  testMatch: ['**/tests/**/*.[jt]s?(x)', '!**/mocks/**/*.[jt]s?(x)'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',
   },
