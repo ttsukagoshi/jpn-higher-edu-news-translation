@@ -1,6 +1,6 @@
 {
   "name": "mext-announcement-translation",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "文部科学省（MEXT）が掲載している新着情報を読み取り、DeepL APIを使って翻訳した上で自身のGmailアカウントにメール通知するためのGoogle Apps Script",
   "engines": {
     "node": ">=20.0.0"
