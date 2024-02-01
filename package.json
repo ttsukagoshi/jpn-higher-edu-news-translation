@@ -1,7 +1,7 @@
 {
-  "name": "mext-announcement-translation",
+  "name": "jpn-higher-edu-news-translation",
   "version": "0.2.0",
-  "description": "文部科学省（MEXT）が掲載している新着情報を読み取り、DeepL APIを使って翻訳した上で自身のGmailアカウントにメール通知するためのGoogle Apps Script",
+  "description": "日本の高等教育関連の新着情報を読み取り、DeepL APIを使って翻訳した上で自身のGmailアカウントにメール通知するためのGoogle Apps Script",
   "engines": {
     "node": ">=20.0.0"
   },
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ttsukagoshi/gas-template.git"
+    "url": "git+https://github.com/ttsukagoshi/jpn-higher-edu-news-translation.git"
   },
   "keywords": [
     "gmail",
@@ -25,9 +25,9 @@
   "author": "ttsukagoshi",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ttsukagoshi/gas-template/issues"
+    "url": "https://github.com/ttsukagoshi/jpn-higher-edu-news-translation/issues"
   },
-  "homepage": "https://github.com/ttsukagoshi/gas-template#readme",
+  "homepage": "https://github.com/ttsukagoshi/jpn-higher-edu-news-translation#readme",
   "devDependencies": {
     "@google/clasp": "^2.4.2",
     "@types/google-apps-script": "^1.0.78",
