@@ -146,13 +146,13 @@ class Utils {
    * @returns {string} ISO8601形式の日付文字列（例：2020-10-01）
    */
   static convertJapaneseDateToISO8601(japaneseDate) {
-    const reiwaYear = japaneseDate.match(/令和(\d+|元)年/)[1];
+    const reiwaYear = japaneseDate.match(/令和(\d{1,2}|元)年/)[1];
     const year =
       reiwaYear === '元'
         ? 2019 // 令和元年 -> 西暦2019年
         : parseInt(reiwaYear) + 2018; // 令和2年 -> 西暦2020年
-    const month = japaneseDate.match(/(\d+)月/)[1].padStart(2, '0');
-    const day = japaneseDate.match(/(\d+)日/)[1].padStart(2, '0');
+    const month = japaneseDate.match(/(\d{1,2})月/)[1].padStart(2, '0');
+    const day = japaneseDate.match(/(\d{1,2})日/)[1].padStart(2, '0');
     return `${year}-${month}-${day}`;
   }
 
@@ -240,7 +240,7 @@ class Mext {
    */
   static parseMextNewsWebpage(htmlString) {
     const regexp =
-      /<h3 class="information-date">(令和\d+年\d+月\d+日)<\/h3>\s+<ul class="news_list">([\s\S]*?)<\/ul>/g;
+      /<h3 class="information-date">(令和\d{1,2}年\d{1,2}月\d{1,2}日)<\/h3>\s+<ul class="news_list">([\s\S]*?)<\/ul>/g;
     const matches = [...htmlString.matchAll(regexp)];
     return matches.map((match) => ({
       date: Utils.convertJapaneseDateToISO8601(match[1]),
