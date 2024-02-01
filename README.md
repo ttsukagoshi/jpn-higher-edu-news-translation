@@ -17,7 +17,7 @@
 
 1. スタンドアロン型のGoogle Apps Scriptファイルを作成する。（参考：[【初心者向け】GASの2種類のスクリプトの作成方法！](https://www.teijitaisya.com/gas-create-script/)）
 2. 本レポジトリの[`src/code.js`](https://github.com/ttsukagoshi/jpn-higher-edu-news-translation/blob/main/src/code.js)内のコードをコピペする。
-3. スクリプトプロパティに、自身のDeepL API Keyを登録する。プロパティ名は「`DEEPL_API_KEY`」。（参考：[GASで環境変数(スクリプトプロパティ)を使う方法](https://zenn.dev/u1e2k/articles/2cbdeb9db4b3cc)）
+3. スクリプトプロパティに、自身のDeepL API Keyを登録する。プロパティ名は「`DEEPL_API_KEY`」。（参考：[GASで環境変数(スクリプトプロパティ)を使う方法](https://zenn.dev/u1e2k/articles/2cbdeb9db4b3cc)、[認証キー – DeepLヘルプセンター](https://support.deepl.com/hc/ja/articles/360020695820-%E8%AA%8D%E8%A8%BC%E3%82%AD%E3%83%BC)）
 4. 時間型トリガーを設定する。本スクリプトは1日1回、目的のウェブページの内容をスクレイピングして前日分の新着情報を取得する設計となっているので、最頻でも1回/日がおすすめ。それ以上の頻度でもできるが、当然ながらスクレイピング先のサーバに余計な負荷をかけないよう、良識の範囲内で行うこと。
 
 ## ライセンス
