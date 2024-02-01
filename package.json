@@ -1,6 +1,6 @@
 {
   "name": "jpn-higher-edu-news-translation",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "日本の高等教育関連の新着情報を読み取り、DeepL APIを使って翻訳した上で自身のGmailアカウントにメール通知するためのGoogle Apps Script",
   "engines": {
     "node": ">=20.0.0"
