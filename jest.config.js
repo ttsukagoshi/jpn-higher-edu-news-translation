@@ -9,6 +9,14 @@ module.exports = {
   coverageDirectory: 'coverage',
   coveragePathIgnorePatterns: ['/node_modules/', '/tests/'],
   coverageProvider: 'v8',
+  coverageThreshold: {
+    global: {
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100,
+    },
+  },
   globals: {
     PropertiesService: {},
     Session: {},
