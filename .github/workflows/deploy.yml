@@ -26,7 +26,7 @@ jobs:
           node-version: '20' # Check if this node-version is compatible with the latest version of clasp
 
       - name: Cache node modules
-        uses: actions/cache@v3.3.1
+        uses: actions/cache@v4.0.0
         env:
           cache-name: cache-node-modules
         with:
